@@ -1,0 +1,83 @@
+body {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+}
+
+.hidden {
+  display: none;
+}
+
+h1 {
+  margin: 0.5em;
+  font-size: 2em;
+}
+
+h2 {
+  margin: 0.5em;
+  font-size: 1.5em;
+}
+
+h3 {
+  margin: 0.5em;
+  font-size: 1em;
+}
+
+p {
+  margin: 0.5em;
+  line-height: 2em;
+}
+
+input {
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+#container-current {
+  margin: 1em;
+}
+
+hr {
+  border: 0.125em solid #bfbfaa;
+  width: 80%;
+  margin-block: 0;
+}
+
+.container-forecast {
+  display: inline-block;
+  margin: 1em;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  color: white;
+  background-color: #4a608c;
+  height: 4em;
+  vertical-align: middle;
+  line-height: 4em;
+}
+
+#content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2em;
+  box-shadow: 0 0 0.5em #bf9004;
+  text-align: center;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  background-color: #730202;
+  height: 2em;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather App</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+
+    <div id='header'>
+        <form>
+            <input id="input-text" type="text" placeholder="Seattle, Washington" />
+            <input id='radio-imperial' type='radio' name='units' value='imperial'/>
+            <label for='radio-imperial'>Imperial</label>
+            <input id='radio-metric' type='radio' name='units' value='metric'/>
+            <label for='radio-metric'>Metric</label>
+            <input id="input-btn" type="button" value="Search" />
+        </form>
+    </div>
+
+    <div id="content" class="hidden">
+
+        <div id="container-current">
+            <h1 id="weather"></h1>
+            <h2 id="wind"></h2>
+            <img id='icon' />
+        </div>
+
+        <hr />
+    
+        <div id="container-three-day-forecast">
+            <div class="container-forecast">
+            <h3 id="d0-date"></h2>
+            <h3 id="d0-weather"></h2>
+            <img id="d0-icon" />
+            </div>
+    
+            <div class="container-forecast">
+            <h3 id="d1-date"></h2>
+            <h3 id="d1-weather"></h2>
+            <img id="d1-icon" />
+            </div>
+    
+            <div class="container-forecast">
+            <h3 id="d2-date"></h2>
+            <h3 id="d2-weather"></h2>
+            <img id="d2-icon" />
+            </div>
+        </div>
+    </div>
+
+
+    <div id="footer">
+        <h3>Written by Austin Cudworth for The Odin Project</h3>
+    </div>
+
+  </body>
+
+
+
+  <script src="main.js"></script>
+</html>
